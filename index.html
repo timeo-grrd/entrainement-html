@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- titre de la page  -->
+    <title>première page html tuto</title>
+    <!-- icone de l'onglet -->
+    <link rel="shortcut icon" href="./logo head.png" />
+  </head>
+  <body>
+    <nav>
+      <!-- UL= unordered list -->
+      <ul>
+        <li>acceuil</li>
+        <li>boutique</li>
+        <li><a href="#form"> formulaire</a></li>
+      </ul>
+    </nav>
+    <header>
+      <!-- un seul h1 par page -->
+      <h1>ceci est le titre principal</h1>
+      <p>
+        salut la team <em>salut la team</em> <strong>salut la team </strong>
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio in sed
+        maiores doloribus optio non debitis, ab laboriosam facilis impedit.
+      </p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Ordered list</h2>
+        <ol>
+          <li>ceci est une</li>
+          <li>liste dans</li>
+          <li>l'ordre</li>
+        </ol>
+      </section>
+      .
+
+      <section>
+        <h3>ajout d'une image en html</h3>
+        <img
+          src="./aurore-boreales-suede-laponie-flarken-adventure-1920x1200.jpG"
+          height="200"
+          alt="image d'une aurore boréale"
+        />
+        <!-- l'alt de l'image est pour les aveugles -->
+        <div>
+          <h4>tableaux</h4>
+          <table
+            border="4"
+            cellpadding="10"
+            cellspacing="4"
+            style="text-align: center"
+          >
+            <!-- thead est pour l'entête du tableau -->
+            <!-- faire shift alt fl‘che du bas pour copier une ligne vers le bas  -->
+            <thead>
+              <tr>
+                <th>col 1</th>
+                <th>col 2</th>
+                <th>col 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2">cell 1</td>
+                <td>cell 2</td>
+                <td>cell 3</td>
+              </tr>
+              <tr>
+                <td colspan="2">cell 4</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h5><span>&#8594;</span>les liens</h5>
+          <!-- _blank permet de créer un nouvel onglet -->
+          <a href="https://htmlcheatsheet.com" target="_blank"
+            >html cheat sheet</a
+          >
+        </div>
+        <div>
+          <h6><i>&#9748;</i>vidéos</h6>
+          <video src="./cuisine.mp4" autoplay muted loop height="200"></video>
+        </div>
+      </section>
+      <section id="form">
+        <h2>les formulaires</h2>
+        <form action="">
+          <!-- for et id permettent de lier le label à l'input  -->
+          <label for="name">Nom</label>
+          <input type="text" id="name" placeholder="entrez votre nom" />
+          <br />
+          <label for="age">Age</label>
+          <input type="number" name="age" id="age" value="56" />
+          <br />
+          <!-- input de type select -->
+          <label for="gender">gender</label>
+          <select id="gender">
+            <option value="homme">homme</option>
+            <option value="femme">femme</option>
+            <option selected value="lgbtqi+">lgbtqi+</option>
+            <br />
+          </select>
+          <!-- input de type radio  -->
+          <div>
+            <input type="radio" name="type" id="human" checked />
+            <label for="human">humain</label>
+
+            <input type="radio" name="type" id="dog" />
+            <label for="dog">chien</label>
+
+            <input type="radio" name="type" id="cat" />
+            <label for="cat">chat</label>
+          </div>
+          <textarea
+            placeholder="votre mmessage..."
+            id=""
+            cols="20"
+            rows="5"
+          ></textarea>
+          <br />
+          <!-- input de type checkbox  -->
+          <input type="checkbox" name="" id="cgv" />
+          <label for="cgv">accepter les conditions générales</label>
+          <br />
+          <!-- input de type submit qui permet de valider  -->
+          <input
+            type="submit"
+            value="ceci est un bouton pour valider le formulaire"
+          />
+        </form>
+
+        <button>ceci est un bouton</button>
+      </section>
+    </main>
+    <!-- mail et envoie de fichiers  -->
+    <footer>
+      <a href="mailto:timeog53@gmail.com">contacter le goat</a>
+      <br />
+      <a href="./notice.txt" download="notice">télécharger la notice</a>
+    </footer>
+  </body>
+</html>
